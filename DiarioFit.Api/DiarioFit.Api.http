@@ -1,0 +1,6 @@
+@DiarioFit.Api_HostAddress = http://localhost:5234
+
+GET {{DiarioFit.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
