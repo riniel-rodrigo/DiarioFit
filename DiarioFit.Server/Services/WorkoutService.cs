@@ -3,9 +3,9 @@ using DiarioFit.Server.Services.Base;
 
 namespace DiarioFit.Server.Services
 {
-    public class UserService : DiarioFitBaseService<User>
+    public class WorkoutService : DiarioFitBaseService<Workout>
     {
-        public UserService(AppDbContext context) : base(context)
+        public WorkoutService(AppDbContext context) : base(context)
         {
         }
     }

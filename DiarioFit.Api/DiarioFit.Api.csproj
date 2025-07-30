@@ -20,11 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DiarioFit.Context\DiarioFit.Context.csproj" />
+    <ProjectReference Include="..\DiarioFit.Intf\DiarioFit.Intf.csproj" />
     <ProjectReference Include="..\DiarioFit.Server\DiarioFit.Server.csproj" />
   </ItemGroup>
 

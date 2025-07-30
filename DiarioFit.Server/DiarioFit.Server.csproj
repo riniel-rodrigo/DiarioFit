@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DiarioFit.Context\DiarioFit.Context.csproj" />
     <ProjectReference Include="..\DiarioFit.Intf\DiarioFit.Intf.csproj" />
   </ItemGroup>
 

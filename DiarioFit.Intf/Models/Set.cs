@@ -9,12 +9,14 @@ namespace DiarioFit.Intf.Models
         [Key]
         public int Id { get; set; }
         public int Repetitions { get; set; }
-        public double Weigth { get; set; }
+        public double Weight { get; set; }
 
         [ForeignKey("Workout")]
-        public int WorkoutsId { get; set; }
+        public int WorkoutId { get; set; }
 
         [ForeignKey("Exercice")]
-        public int ExerciceId { get; set; }
+        public int ExerciseId { get; set; }
+        public required Workout Workout { get; set; }
+        public required Exercise Exercise { get; set; }
     }
 }

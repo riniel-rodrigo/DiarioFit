@@ -8,11 +8,12 @@ namespace DiarioFit.Intf.Models
     {
         [Key]
         public int Id { get; set; }
-        public String Name { get; set; }
-        public String Description { get; set; }
+        public required String Name { get; set; }
+        public String? Description { get; set; }
         public DateTime CreatedAt { get; set; }
 
         [ForeignKey("User")]
         public int UserId { get; set; }
+        public required User User { get; set; }
     }
 }

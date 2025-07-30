@@ -4,15 +4,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace DiarioFit.Intf.Models
 {
     [Table("Workout")]
-    internal class Workout
+    public class Workout
     {
         [Key]
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public String Title { get; set; }
+        public required String Title { get; set; }
 
         [ForeignKey("User")]
         public int UserId { get; set; }
+        public required User User { get; set; }
 
     }
 }
